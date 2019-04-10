@@ -24,9 +24,9 @@ public class Main {
             Properties result = new Properties();
             result.put(Context.INITIAL_CONTEXT_FACTORY, PKG_INTERFACES);
             result.put(Context.URL_PKG_PREFIXES, "org.wildfly.ejb.client.naming");
-            result.put(Context.PROVIDER_URL,"http-remoting://azote.adexflow.com:8080");
-            result.put(Context.SECURITY_PRINCIPAL, "nlozano35");
-            result.put(Context.SECURITY_CREDENTIALS, "Adexflow7240.");
+            result.put(Context.PROVIDER_URL,"http-remoting://127.0.0.1:8080");
+            result.put(Context.SECURITY_PRINCIPAL, "your_user");
+            result.put(Context.SECURITY_CREDENTIALS, "your_password");
             result.put("wildfly.naming.client.ejb.context", false);
 
             Context ctx = new InitialContext (result);
